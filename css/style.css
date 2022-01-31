@@ -19,7 +19,7 @@ vert : #99E2D0
     
     p.localisation {
         background-color: #EAEAEA;
-        box-shadow: inset 3px 3px 3px #CFCFCF;
+        box-shadow: inset 0px 3px 3px #CFCFCF;
         margin-top: 0;
         padding: 18px 0;
         font-weight: bold;
@@ -52,8 +52,16 @@ main {
     background-color: #F6F6F6;
 }
 
+section:nth-of-type(1) > h1, p {
+    padding: 0 40px;
+}
+
 section:nth-of-type(2) {
     background-color: #fff;
+}
+
+section:nth-of-type(2), section:nth-of-type(3) {
+    padding: 15px 15px;
 }
 
 footer {
@@ -83,7 +91,29 @@ button.button_our-restaurants {
     color: #fff;
     box-shadow: 3px 3px 10px #d1d0d0;
     margin: 15px 0 30px 0;
-    font-weight: 575;
+    font-weight: 595;
+}
+
+.button_fonctions {
+    border: none;
+    background-color: #F6F6F6;
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: 3px 3px 10px #d1d0d0;
+    margin: 15px 0 30px 0;
+    font-weight: 595;
+}
+
+.button_fonctions:hover {
+    background-color: #F5EDFF;
+}
+
+li.button_fonctions i {
+    margin: 20px;
+}
+
+li.button_fonctions i:hover {
+    color: #9356DC;
 }
 
 section p {
