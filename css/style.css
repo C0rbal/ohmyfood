@@ -8,25 +8,25 @@ vert : #99E2D0
 
 @media screen and (max-width: 768px) {
 
-    a.logo {
-        width: 100%;
-    }
-
     header, section:first-child {
         text-align: center;
     }
 
-    header a.logo {
+    header {
         font-size: 36px;
-        box-shadow: 3px 3px 3px #CFCFCF;
         padding: 18px 0px 9px 0px;
-        z-index: 1;
     }
     
-    header p {
+    p.localisation {
         background-color: #EAEAEA;
-        margin: 0;
+        box-shadow: inset 3px 3px 3px #CFCFCF;
+        margin-top: 0;
         padding: 18px 0;
+        font-weight: bold;
+    }
+
+    h1 {
+        margin-top: 35px;
     }
 }
 
@@ -58,12 +58,34 @@ section:nth-of-type(2) {
 
 footer {
     background-color: #353535;
+    padding: 5px 0 15px 0;
 }
 
 footer a {
     color: #fff;
+    line-height: 1.8em;
+    font-size: 0.9em;
 }
 
-.logo {
+.logo, .logo_footer {
     font-family: Shrikhand, serif;
+}
+
+.logo_footer {
+    font-size: 1em;
+}
+
+button.button_our-restaurants {
+    border: none;
+    background: linear-gradient(#FF79DA, #9356DC);
+    border-radius: 25px;
+    padding: 10px 20px;
+    color: #fff;
+    box-shadow: 3px 3px 10px #d1d0d0;
+    margin: 15px 0 30px 0;
+    font-weight: 575;
+}
+
+section p {
+    font-weight: 300;
 }
