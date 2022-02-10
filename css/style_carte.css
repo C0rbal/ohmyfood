@@ -120,10 +120,13 @@ button.button_our-restaurants {
     box-shadow: 3px 3px 10px #d1d0d0;
     margin: 45px 0 70px 0;
     font-weight: 595;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
 }
 
 button.button_our-restaurants:hover {
-    cursor: pointer;
+    background: linear-gradient(#f890db, #9d68df);
+    box-shadow: 2px 2px 8px #bbbbbb;
 }
 
 ul.fonctions {
@@ -200,22 +203,28 @@ h2::before{
  }
 
  .dish {
-     width: 86%;
-     margin: 0 auto;
-     margin-top: 15px;
-     padding: 0 15px;
-     background-color: #fff;
-     border-radius: 15px;
-     box-shadow: 3px 3px 6px #ebebeb;
+    width: 86%;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 0 15px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 3px 3px 6px #ebebeb;
+    overflow: hidden;
+    text-overflow: ellipsis; 
  }
 
  .wrapper_dish {
-     display: flex;
-     align-items:flex-end;
-     justify-content: space-between;
+    display: flex;
+    align-items:flex-end;
+    justify-content: space-between;
  }
 
 p.price {
-     font-weight: bold;
-     font-size: 1em;
+    font-weight: bold;
+    font-size: 1em;
  }
+
+/* LOAD SPINNER */
+
+  

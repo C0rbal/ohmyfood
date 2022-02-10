@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
 
-    <title>Le délice du sens | Ohmyfood! Paris | Réservez le menu qui vous convient.</title>
+    <title>Le délice des sens | Ohmyfood! Paris | Réservez le menu qui vous convient.</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Feuilles de style -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style_carte.css" />
 
     <!-- Typographies et icônes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,97 +19,106 @@
 </head>
 <body>
 
+    <!-- LOAD SPINNER -->
+
     <!-- HEADER -->
-<header>
-    <a href="index.html" class="logo">Le délice du sens</a> <i class="fas fa-heart"></i>
+<header class="header_carte">
+    <a href="index.html" class="logo_carte"><i class="fas fa-arrow-left"></i></a>
+    <a href="index.html" class="logo_carte">ohmyfood</a>
 </header>
 
     <!-- MAIN -->
-<main>
+<section class="deco">
+    <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="#" />
+</section>
+
+<main class="menu">
     <section>
+        <a href="menu_le-delice-du-sens.html" class="logo"><h1>Le délice des sens</a> <i class="fas fa-heart"></i></h1>
+        
         <h2>Entrées</h2>
-            <article class="dish">
-                <h3>Ravioles de foie gras</h3>
-                <span class="wrapper_dish">
-                    <p>Accompagnés de leur crème à la truffe</p>
-                    <p>25&nbsp;€</p>
-                </span>
+            <article class="dish wrapper_dish">
+                <div>
+                    <h3>Tartare de thon</h3>
+                    <p>Assaisonné au yuzu</p>
+                </div>
+                    <p class="price">25&nbsp;€</p>
             </article>
-            <article class="dish">
-                <h3>Caviar osciètre</h3>
-                <span class="wrapper_dish">
-                    <p>Sur blini à la farine de blé noir</p>
-                    <p>35&nbsp;€</p>
-                </span>
+
+            <article class="dish wrapper_dish">
+                <div>
+                    <h3>Bouchée de homard croustillant</h3>
+                    <p>Et sa farandole de petits légumes</p>
+                </div>
+                <p class="price">35&nbsp;€</p>
             </article>
-            <article class="dish">
-                <h3>Homard et espuma</h3>
-                <span class="wrapper_dish">
-                    <p>Mariné aux zestes d'orange</p>
-                    <p>20&nbsp;€</p>
-                </span>
-            </article>
-            <article class="dish">
-                <h3>Foie gras de canard cuit entier</h3>
-                <span class="wrapper_dish">
-                    <p>Confiture de figue et pain toasté</p>
-                    <p>35&nbsp;€</p>
-                </span>
+
+            <article class="dish wrapper_dish">
+                <div>
+                    <h3>Velouté de cèpes</h3>
+                    <p>Aux truffes</p>
+                </div>
+                <p class="price">20&nbsp;€</p>
             </article>
 
         <h2>Plats</h2>
-            <article class="dish">
-                <h3>Noix de coquilles Saint-Jacques</h3>
-                <span class="wrapper_dish">
-                    <p>Sur lit de purée céleri-rave</p>
-                    <p>40&nbsp;€</p>
-                </span>
+            <article class="dish wrapper_dish">
+                <div>
+                    <h3>Poulet rôti aux herbes de Provence</h3>
+                    <p>Et sa crème de truffe</p>
+                </div>
+                <p class="price">40&nbsp;€</p>
             </article>
-            <article class="dish">
-                <h3>Langoustine poêlée</h3>
-                <span class="wrapper_dish">
-                    <p>Purée de patate douce</p>
-                    <p>35&nbsp;€</p>
-                </span>
+
+            <article class="dish wrapper_dish">
+                <div>
+                    <h3>Langouste rôtie</h3>
+                    <p>Et ses légumes de saison</p>
+                </div>
+                <p class="price">35&nbsp;€</p>
             </article>
-            <article class="dish">
-                <h3>Mijoté de queue de boeuf</h3>
-                <span class="wrapper_dish">
-                    <p>Et riz sauvage aux zestes de citron</p>
-                    <p>44&nbsp;€</p>
-                </span>
+
+            <article class="dish wrapper_dish">
+                <div>
+                    <h3>Côte de boeuf Angus</h3>
+                    <p>Et sa purée de panais</p>
+                </div>
+                <p class="price">44&nbsp;€</p>
             </article>
 
         <h2>Desserts</h2>
-            <article class="dish">
-                <h3>Macaron noisette et chocolat</h3>
-                <span class="wrapper_dish">
-                    <p>Glace au caramel brun et sel de Guérande</p>
-                    <p>18&nbsp;€</p>
-                </span>
+
+            <article class="dish wrapper_dish">
+                <div>
+                    <h3>Farandole de desserts</h3>
+                    <p>Du chef</p>
+                </div>
+                <p class="price">18&nbsp;€</p>
             </article>
-            <article class="dish">
-                <h3>Baba au rhum revisité</h3>
-                <span class="wrapper_dish">
-                    <p>Avec son coulis de citron</p>
-                    <p>22&nbsp;€</p>
-                </span>
+            
+            <article class="dish wrapper_dish">
+                <div>
+                    <h3>Crème brulée</h3>
+                    <p>Revisitée</p>
+                </div>
+                <p class="price">22&nbsp;€</p>
             </article>
-            <article class="dish">
-                <h3>Tarte au citron meringuée</h3>
-                <span class="wrapper_dish">
-                    <p>Destructurée</p>
-                    <p>23&nbsp;€</p>
-                </span>
+            
+            <article class="dish wrapper_dish">
+                <div>
+                    <h3>Tiramisu</h3>
+                    <p>À la noisette</p>
+                </div>
+                <p class="price">23&nbsp;€</p>
             </article>
 
-        <button class="order">Commander</button>
+        <button class="button_our-restaurants">Commander</button>
     </section>
 
     <!-- FOOTER -->
 <footer>
     <nav>
-        <ul>
+        <ul class="menu_footer">
             <li><a href="index.html" class="logo">ohmyfood</a></li>
             <li><a href="#"><i class="fas fa-utensils"></i> Proposer un restaurant</a></li>
             <li><a href="#"><i class="fas fa-hands-helping"></i> Devenir partenaire</a></li>
