@@ -1,11 +1,25 @@
-/*
-violet : #9356DC
-rose : #FF79DA
-vert : #99E2D0
-*/
+/* DÉBUT CSS VERSION MOBILE */
 
-/* DÉBUT VERSION GÉNÉRALE */
+@media screen and (max-width: 768px) {
 
+    header {
+        font-size: 36px;
+        padding: 18px 0px 9px 0px;
+    }
+    
+    p.localisation {
+        background-color: #EAEAEA;
+        box-shadow: inset 0px 3px 3px #CFCFCF;
+        margin-top: 0;
+        padding: 18px 0;
+        font-weight: bold;
+    }
+
+    h1 {
+        margin-top: 35px;
+    }
+
+    
 body, ul, section {
     margin: 0;
     padding: 0;
@@ -233,4 +247,5 @@ section p.new {
     margin: 0;
     padding: 0;
     height: 20px;
+}
 }
