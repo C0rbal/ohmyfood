@@ -108,6 +108,7 @@ footer a {
 
 .logo_carte {
     font-size: 0.8em;
+    text-align: center;
 }
 
 button.button_our-restaurants {
@@ -180,7 +181,23 @@ ul.restaurants, h2 {
 .header_carte {
     margin: 0;
     padding: 0;
+    margin-left: 25px;
     height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carte_element:nth-child(1)
+{
+    flex: 0;
+}
+.carte_element:nth-child(2)
+{
+    flex: 3;
+}
+
+.fa-arrow-left {
+    font-size: 0.5em;
 }
 
 h2 {
@@ -215,9 +232,9 @@ h2::before{
     cursor: pointer;
  }
 
- .wrapper_dish {
+.wrapper_dish {
     display: flex;
-    align-items:flex-end;
+    align-items: flex-end;
     justify-content: space-between;
  }
 
@@ -233,22 +250,37 @@ p.price {
  }
 
  p.check-circle {
-    position: relative;
+    /*position: relative;
     right: -15px;
     padding-top: 30px;
     height: 50px;
-    width: 60px;
+    width: 60px;*/
     background-color: #99E2D0;
     margin: 0;
     text-align: center;
+    opacity: 0;
+
+    transition: transform 0.4s ease-in-out,
+                width 0.4s ease-in-out,
+                opacity 0.4s ease-in-out;
+
+    color: white;
+    transform: rotate(360deg);
+    transition: 0.4s ease-in-out;
  }
+
+article.dish:hover  p.check-circle {
+    opacity: 100%;
+    width: 7rem;
+  }
+ 
 
  .fa-heart {
     font-size: 1.2em;
     padding-right: 15px;
     -webkit-text-stroke-width: 1.5px;
-            -webkit-text-stroke-color: black;
-            -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: black;
+    -webkit-text-fill-color: transparent;
 }
 
 .fa-heart:hover {
