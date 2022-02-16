@@ -8,10 +8,6 @@ vert : #99E2D0
 
 @media screen and (max-width: 768px) {
 
-    header, section:first-child {
-        text-align: center;
-    }
-
     header {
         font-size: 36px;
         padding: 18px 0px 9px 0px;
@@ -37,6 +33,15 @@ body, ul, section {
     margin: 0;
     padding: 0;
     font-family: Roboto, sans-serif;
+}
+
+header, section:first-child {
+    text-align: center;
+}
+
+header {
+    font-size: 52px;
+    padding: 18px 0px 9px 0px;
 }
 
 li {
@@ -108,6 +113,11 @@ button.button_our-restaurants {
 button.button_our-restaurants:hover {
     background: linear-gradient(#f890db, #9d68df);
     box-shadow: 2px 2px 8px #bbbbbb;
+}
+
+.fa-heart {
+    font-size: 1.7em;
+    padding-right: 15px;
 }
 
 .fa-heart:hover {
@@ -196,7 +206,7 @@ ul.restaurants, h2 {
 }
 
 .box_restaurant h3 {
-    font-size: 1.3em;
+    font-size: 1.4em;
 }
 
 .box_restaurant h3, .box_restaurant p {
@@ -219,10 +229,10 @@ ul.restaurants, h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-left: 10px;
 }
 
 .restaurant_wrapper p {
-    margin-left: 10px;
     margin-top: -20px;
     padding: 0;
     font-size: 1.2em;
