@@ -4,19 +4,18 @@ rose : #FF79DA
 vert : #99E2D0
 */
 
+
 /* DÉBUT CSS VERSION MOBILE */
 
 @media screen and (max-width: 768px) {
-
-    header, section:first-child {
+    header,
+    section:first-child {
         text-align: center;
     }
-
     header {
         font-size: 36px;
         padding: 18px 0px 9px 0px;
     }
-    
     p.localisation {
         background-color: #EAEAEA;
         box-shadow: inset 0px 3px 3px #CFCFCF;
@@ -24,7 +23,6 @@ vert : #99E2D0
         padding: 18px 0;
         font-weight: bold;
     }
-
     h1 {
         display: flex;
         justify-content: space-between;
@@ -38,7 +36,9 @@ vert : #99E2D0
 
 /* DÉBUT VERSION GÉNÉRALE */
 
-body, ul, section {
+body,
+ul,
+section {
     margin: 0;
     padding: 0;
     font-family: Roboto, sans-serif;
@@ -70,7 +70,8 @@ p {
     font-size: 0.8em;
 }
 
-p, h3 {
+p,
+h3 {
     text-align: left;
 }
 
@@ -98,7 +99,9 @@ footer a {
     font-size: 0.9em;
 }
 
-.logo, .logo_footer, .logo_carte {
+.logo,
+.logo_footer,
+.logo_carte {
     font-family: Shrikhand, serif;
 }
 
@@ -134,11 +137,13 @@ ul.fonctions {
     margin-left: 25px;
 }
 
-ul.fonctions, ul.restaurants {
+ul.fonctions,
+ul.restaurants {
     margin-right: 10px;
 }
 
-ul.restaurants, h2 {
+ul.restaurants,
+h2 {
     margin-left: 10px;
     margin-top: 35px;
 }
@@ -160,7 +165,7 @@ ul.restaurants, h2 {
 
 .new {
     background-color: #99E2D0;
-    color:#008766;
+    color: #008766;
     padding: 5px 15px;
     border-radius: 3px;
     right: 40px;
@@ -187,12 +192,11 @@ ul.restaurants, h2 {
     justify-content: space-between;
 }
 
-.carte_element:nth-child(1)
-{
+.carte_element:nth-child(1) {
     flex: 0;
 }
-.carte_element:nth-child(2)
-{
+
+.carte_element:nth-child(2) {
     flex: 3;
 }
 
@@ -210,16 +214,16 @@ h2 {
     margin-left: 25px;
 }
 
-h2::before{
+h2::before {
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
     border-bottom: 3px solid #94E1CE;
     width: 40px;
- }
+}
 
- .dish {
+.dish {
     width: 86%;
     margin: 0 auto;
     margin-top: 15px;
@@ -230,22 +234,28 @@ h2::before{
     overflow: hidden;
     text-overflow: ellipsis;
     cursor: pointer;
- }
+}
 
-.wrapper_dish {
+.wrapper_dish,
+.wrapper_dish .dish-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrapper_dish .dish-item {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
- }
+    width: 100%;
+}
 
 p.price {
     font-weight: bold;
     font-size: 1em;
- }
+}
 
- p.check-circle {
-    position: relative;
-    right: -15px;
+p.check-circle {
     padding-top: 15px;
     padding-bottom: 15px;
     height: 50px;
@@ -257,34 +267,34 @@ p.price {
     justify-content: center;
     background-color: #99E2D0;
     margin: 0;
-    margin-left: -200px;
     text-align: center;
+    margin-right: -100px;
     opacity: 0;
-    width: 0;
-    transition: transform 0.4s ease-in-out,
-                padding 0.4s ease-in-out,
-                width 0.4s ease-in-out,
-                opacity 0.4s ease-in-out;
- }
+    width: 80px;
+    display: block;
+    line-height: 58px;
+    /* transition: transform 0.4s ease-in-out, padding 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out; */
+    transition: all 0.4s ease-in-out;
+}
 
- .fa-check-circle {
+.fa-check-circle {
     color: #fff;
     font-size: 1.5em;
     background-color: #99E2D0;
- }
+}
 
- article.dish:hover .fa-check-circle {
+article.dish:hover .fa-check-circle {
     transform: rotate(360deg);
     transition: 0.9s ease-in-out;
- }
+}
 
-article.dish:hover  p.check-circle {
-    opacity: 100%;
-    width: 80px;
-  }
- 
+article.dish:hover p.check-circle {
+    opacity: 1;
+    margin-right: -16px;
+    margin-left: 10px;
+}
 
- .fa-heart {
+.fa-heart {
     font-size: 1.2em;
     padding-right: 15px;
     -webkit-text-stroke-width: 1.5px;
@@ -295,11 +305,10 @@ article.dish:hover  p.check-circle {
 .fa-heart:hover {
     cursor: pointer;
     background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -webkit-text-stroke-width: 0px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0px;
 }
 
-/* LOAD SPINNER */
 
-  
+/* LOAD SPINNER */
