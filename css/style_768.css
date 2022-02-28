@@ -126,8 +126,10 @@ ul.fonctions {
     margin-left: 25px;
 }
 
-ul.fonctions, ul.restaurants {
+section ul.fonctions, section ul.restaurants {
     margin-right: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 ul.restaurants, h2 {

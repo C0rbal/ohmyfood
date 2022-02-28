@@ -6,8 +6,6 @@ vert : #99E2D0
 
 /* DÉBUT VERSION GÉNÉRALE */
 
-
-
 body, ul, section {
     margin: 0;
     padding: 0;
@@ -21,6 +19,19 @@ header, section:first-child {
 header {
     font-size: 52px;
     padding: 18px 0px 9px 0px;
+}
+
+header, section:first-child {
+    text-align: center;
+}
+
+    
+p.localisation {
+    background-color: #EAEAEA;
+    box-shadow: inset 0px 3px 3px #CFCFCF;
+    margin-top: 0;
+    padding: 18px 0;
+    font-weight: bold;
 }
 
 li {
@@ -66,6 +77,8 @@ footer a {
 
 .logo, .logo_footer, .logo_carte {
     font-family: Shrikhand, serif;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .logo_footer {
@@ -98,16 +111,30 @@ button.button_our-restaurants:hover {
     font-size: 1.7em;
     padding-right: 15px;
     -webkit-text-stroke-width: 1.5px;
-            -webkit-text-stroke-color: black;
-            -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: black;
+    -webkit-text-fill-color: transparent;
+    background: #fff;
+    transition-property: background;
+    transition-duration: 4s;
+    transition-delay: 2s;
 }
 
 .fa-heart:hover {
     cursor: pointer;
     background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -webkit-text-stroke-width: 0px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0px;  
+    animation: heartbeat infinite 1.2s ease-in-out;
+}
+    
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
 }
 
 ul.fonctions {
@@ -116,6 +143,9 @@ ul.fonctions {
 
 ul.fonctions, ul.restaurants {
     margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 ul.restaurants, h2 {
