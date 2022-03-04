@@ -262,43 +262,43 @@ h2::before {
 }
 
 article.dish.wrapper_dish:nth-of-type(1) {
-    animation: fadein 1.5s;
+    animation: fadein 2.5s;
 }
 
 article.dish.wrapper_dish:nth-of-type(2) {
-    animation: fadein 1.5s 200ms;
+    animation: fadein 2.5s 200ms;
 }
 
 article.dish.wrapper_dish:nth-of-type(3) {
-    animation: fadein 1.5s 400ms;
+    animation: fadein 2.5s 400ms;
 }
 
 article.dish.wrapper_dish:nth-of-type(4) {
-    animation: fadein 1.5s 600ms;
+    animation: fadein 2.5s 600ms;
 }
 
 article.dish.wrapper_dish:nth-of-type(5) {
-    animation: fadein 1.5s 800ms;
+    animation: fadein 2.5s 800ms;
 }
 
 article.dish.wrapper_dish:nth-of-type(6) {
-    animation: fadein 1.5s 1000ms;
+    animation: fadein 2.5s 1000ms;
 }
 
 article.dish.wrapper_dish:nth-of-type(7) {
-    animation: fadein 1.5s 1200ms;
+    animation: fadein 2.5s 1200ms;
 }
 
 article.dish.wrapper_dish:nth-of-type(8) {
-    animation: fadein 1.5s 1400ms;
+    animation: fadein 2.5s 1400ms;
 }
 
 article.dish.wrapper_dish:nth-of-type(9) {
-    animation: fadein 1.5s 1600ms;
+    animation: fadein 2.5s 1600ms;
 }
 
 article.dish.wrapper_dish:nth-of-type(10) {
-    animation: fadein 1.5s 1800ms;
+    animation: fadein 2.5s 1800ms;
 }
 
 @keyframes fadein {
