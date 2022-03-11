@@ -256,13 +256,15 @@ h2 {
 }
 
 .nb_fonctions {
-    padding: 5px 12px;
     background: #9356dc;
     border-radius: 50%;
-    left: 25px;
-    position: absolute;
+    left: -35px;
+    top: 60px;
+    margin-top: -45px;
+    padding: 5px 12px;
     display: flex;
     justify-content: center;
+    position: relative;
     font-weight: normal;
 }
 
@@ -342,8 +344,8 @@ bottom: 0;
 z-index: 9999;
 display: block;
 animation: loader forwards;
-animation-delay: 3s;
-animation-duration: 4s;
+animation-delay: 1.5s;
+animation-duration: 2s;
 display: flex;
 align-items: center;
 justify-content: center;
