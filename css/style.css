@@ -343,7 +343,7 @@ z-index: 9999;
 display: block;
 animation: loader forwards;
 animation-delay: 3s;
-animation-duration: 5.2s;
+animation-duration: 4s;
 display: flex;
 align-items: center;
 justify-content: center;

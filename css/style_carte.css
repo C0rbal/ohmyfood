@@ -249,7 +249,8 @@ h2::before {
 }
 
 .dish {
-    width: 86%;
+    width: 87%;
+    min-width: 250px;
     margin: 0 auto;
     margin-top: 15px;
     padding: 0 15px;
@@ -257,8 +258,15 @@ h2::before {
     border-radius: 15px;
     box-shadow: 3px 3px 6px #ebebeb;
     overflow: hidden;
+    white-space: nowrap;
     text-overflow: ellipsis;
     cursor: pointer;
+}
+
+.dish-item div {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 article.dish.wrapper_dish:nth-of-type(1) {
@@ -427,6 +435,3 @@ article.dish:hover p.check-circle {
         transform: scale(1.1);
     }
 }
-
-
-/* LOAD SPINNER */
