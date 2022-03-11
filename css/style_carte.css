@@ -425,7 +425,7 @@ article.dish:hover p.check-circle {
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 0px;
     animation: heartbeat infinite 1.2s ease-in-out;
-} */
+} 
 
 @keyframes heartbeat {
     0% {
@@ -434,4 +434,4 @@ article.dish:hover p.check-circle {
     100% {
         transform: scale(1.1);
     }
-}
+}*/

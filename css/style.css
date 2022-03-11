@@ -115,36 +115,10 @@ button.button_our-restaurants:hover {
     box-shadow: 2px 2px 8px #bbbbbb;
 }
 
-li.anim_restaurants:nth-of-type(1) {
-    animation: fadein 2s;
-}
-
-li.anim_restaurants:nth-of-type(2) {
-    animation: fadein 2s 200ms;
-}
-
-li.anim_restaurants:nth-of-type(3) {
-    animation: fadein 2s 400ms;
-}
-
-li.anim_restaurants:nth-of-type(4) {
-    animation: fadein 2s 600ms;
-}
-
-@keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-
 .hearts {
     position: relative;
     width: 60px;
     height: 60px;
-    /* background: red; */
 }
 
 .hearts i.fas {
@@ -164,10 +138,9 @@ li.anim_restaurants:nth-of-type(4) {
     background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 0px;
-    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-width: 2.5px;
     -webkit-text-stroke-color: transparent;
-    animation: heartbeat infinite 1.2s ease-in-out;
+    /*animation: heartbeat infinite 1.2s ease-in-out;*/
 }
 
 .fa-heart {
@@ -177,29 +150,16 @@ li.anim_restaurants:nth-of-type(4) {
     -webkit-text-stroke-color: black;
     -webkit-text-fill-color: transparent;
     background: #fff;
-    /* transition-property: background;
-    transition-duration: 4s;
-    transition-delay: 2s; */
 }
 
-
-/* .fa-heart:hover {
-    cursor: pointer;
-    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 0px;
-    animation: heartbeat infinite 1.2s ease-in-out;
-} */
-
-@keyframes heartbeat {
+/*@keyframes heartbeat {
     0% {
         transform: scale(1);
     }
     100% {
-        transform: scale(1.1);
+        transform: scale(1.05);
     }
-}
+}*/
 
 ul.fonctions {
     margin-left: 25px;
@@ -272,12 +232,18 @@ h2 {
     background-color: #99E2D0;
     color: #008766;
     padding: 5px 15px;
+    width: fit-content;
     border-radius: 3px;
-    right: 40px;
+    top: 10px;
+    right: 20px;
     position: absolute;
     display: flex;
     justify-content: center;
     font-weight: normal;
+}
+
+ul.restaurants li {
+    position: relative;
 }
 
 .box_restaurant {
