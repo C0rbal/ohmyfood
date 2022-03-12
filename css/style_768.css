@@ -2,23 +2,23 @@
 
 @media screen and (max-width: 768px) {
 
-    header {
-        font-size: 36px;
-        padding: 18px 0px 9px 0px;
-    }
-    
-    p.localisation {
-        background-color: #EAEAEA;
-        box-shadow: inset 0px 3px 3px #CFCFCF;
-        margin-top: 0;
-        padding: 18px 0;
-        font-weight: bold;
-    }
+header {
+    font-size: 36px;
+    padding: 18px 0px 9px 0px;
+}
 
-    h1 {
-        margin-top: 35px;
-    }
+section p.localisation {
+    background-color: #EAEAEA;
+    color: #353535;
+    box-shadow: inset 0px 3px 3px #CFCFCF;
+    margin-top: 0;
+    padding: 18px 0;
+    font-weight: bold;
+}
 
+section h1 {
+    margin-top: 40px;
+}
     
 body, ul, section {
     margin: 0;
@@ -31,8 +31,12 @@ header, section:first-child {
 }
 
 header {
-    font-size: 52px;
-    padding: 18px 0px 9px 0px;
+    margin-top: -15px;
+}
+
+header a.logo {
+    font-size: 0.7em;
+    padding: 0;
 }
 
 li {
@@ -52,6 +56,12 @@ section:nth-of-type(1) > h1, p {
     padding: 0 40px;
 }
 
+main section:nth-of-type(1) p.localisation {
+    font-size: 1.2em;
+    text-transform: none;
+    padding-bottom: 20px;
+}
+
 section:nth-of-type(2) {
     background-color: #fff;
 }
@@ -60,24 +70,13 @@ section:nth-of-type(2), section:nth-of-type(3) {
     padding: 15px 15px;
 }
 
-footer {
-    background-color: #353535;
-    padding: 20px 0 15px 0;
+footer nav ul.menu_footer {
+    margin: 20px;
 }
 
 ul.menu_footer li:first-child {
     padding-bottom: 10px;
     font-size: 1.2em;
-}
-
-footer a {
-    color: #fff;
-    line-height: 1.8em;
-    font-size: 0.9em;
-}
-
-.logo, .logo_footer, .logo_carte {
-    font-family: Shrikhand, serif;
 }
 
 .logo_footer {
@@ -88,22 +87,28 @@ footer a {
     font-size: 0.8em;
 }
 
-button.button_our-restaurants {
-    border: none;
-    background: linear-gradient(#FF79DA, #9356DC);
-    border-radius: 25px;
-    padding: 10px 20px;
+section button.button_our-restaurants {
+    padding: 20px 20px;
     color: #fff;
-    box-shadow: 3px 3px 10px #d1d0d0;
-    margin: 15px 0 30px 0;
-    font-weight: 595;
-    cursor: pointer;
+    margin: 20px 0 65px 0;
+    box-shadow: 3px 3px 10px #b6b6b6;
     transition: all 1s ease-in-out;
 }
 
-button.button_our-restaurants:hover {
+section button.button_our-restaurants:hover {
     background: linear-gradient(#f890db, #9d68df);
     box-shadow: 2px 2px 8px #bbbbbb;
+}
+
+section section.home_img {
+    background-image: none;
+    margin-top: 0;
+    padding-top: 0;
+    color: #000;
+}
+
+section section.home_img::before {
+    position: static;
 }
 
 .fa-heart {
@@ -134,6 +139,21 @@ section ul.fonctions, section ul.restaurants {
 
 ul.restaurants, h2 {
     margin-left: 10px;
+}
+
+section h2 {
+    font-size: 1.8em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: left;
+    text-transform: none;
+    letter-spacing: 0px;
+    color: #000;
+}
+
+section h2::before {
+    padding-bottom: 0px;
+    border-bottom: 0px solid #99E2D0;
 }
 
 .menu_footer {
