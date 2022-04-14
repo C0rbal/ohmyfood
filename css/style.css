@@ -147,9 +147,15 @@ section.home_img p {
     font-size: 1.1em;
 }
 
-button.button_our-restaurants {
+.align_button {
+    display: flex;
+    justify-content: center;
+}
+
+.button_our-restaurants {
     border: none;
     background: linear-gradient(#fa5bcde8, #8554c0dc);
+    width: 300px;
     border-radius: 35px;
     padding: 20px 20px;
     color: #fff;
@@ -162,7 +168,7 @@ button.button_our-restaurants {
     transition: all 0.7s ease-in-out;
 }
 
-button.button_our-restaurants:hover {
+.button_our-restaurants:hover {
     background: linear-gradient(#f890db, #9d68df);
     box-shadow: 2px 2px 8px #424242;
 }
