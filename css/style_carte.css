@@ -244,8 +244,7 @@ h2::before {
 }
 
 .dish {
-    width: 87%;
-    /*min-width: 250px;*/
+    width: 90%;
     margin: 0 auto;
     margin-top: 15px;
     padding: 0 15px;
@@ -261,50 +260,56 @@ h2::before {
     white-space: nowrap;
 }
 
-article.dish.wrapper_dish div.ellipsis p,h3 {
+article.dish.wrapper_dish p,h3 {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
 
+article.dish.wrapper_dish p.price {
+    overflow: visible;
+    white-space: normal;
+    text-overflow: unset;
+}
+
 article.dish.wrapper_dish:nth-of-type(1) {
-    animation: fadein 2.5s;
-}
-
-article.dish.wrapper_dish:nth-of-type(2) {
-    animation: fadein 2.5s 200ms;
-}
-
-article.dish.wrapper_dish:nth-of-type(3) {
-    animation: fadein 2.5s 400ms;
-}
-
-article.dish.wrapper_dish:nth-of-type(4) {
-    animation: fadein 2.5s 600ms;
-}
-
-article.dish.wrapper_dish:nth-of-type(5) {
-    animation: fadein 2.5s 800ms;
-}
-
-article.dish.wrapper_dish:nth-of-type(6) {
     animation: fadein 2.5s 1000ms;
 }
 
-article.dish.wrapper_dish:nth-of-type(7) {
+article.dish.wrapper_dish:nth-of-type(2) {
     animation: fadein 2.5s 1200ms;
 }
 
-article.dish.wrapper_dish:nth-of-type(8) {
+article.dish.wrapper_dish:nth-of-type(3) {
     animation: fadein 2.5s 1400ms;
 }
 
-article.dish.wrapper_dish:nth-of-type(9) {
+article.dish.wrapper_dish:nth-of-type(4) {
     animation: fadein 2.5s 1600ms;
 }
 
-article.dish.wrapper_dish:nth-of-type(10) {
+article.dish.wrapper_dish:nth-of-type(5) {
     animation: fadein 2.5s 1800ms;
+}
+
+article.dish.wrapper_dish:nth-of-type(6) {
+    animation: fadein 2.5s 2000ms;
+}
+
+article.dish.wrapper_dish:nth-of-type(7) {
+    animation: fadein 2.5s 2200ms;
+}
+
+article.dish.wrapper_dish:nth-of-type(8) {
+    animation: fadein 2.5s 2400ms;
+}
+
+article.dish.wrapper_dish:nth-of-type(9) {
+    animation: fadein 2.5s 2600ms;
+}
+
+article.dish.wrapper_dish:nth-of-type(10) {
+    animation: fadein 2.5s 2800ms;
 }
 
 @keyframes fadein {
